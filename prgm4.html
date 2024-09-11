@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Sum of Natural Numbers</title>
+ <script>
+   function SumOfNaturalNumbers(n){
+   let sum=0;
+   for(let i=1;i<=n;i++){
+     sum+=i;
+   }
+   return sum;
+   }
+   function CalculateSum(){
+     const N=parseInt(document.getElementById('number').value);
+     if(!isNaN(N) && N>0) {
+       const sum=SumOfNaturalNumbers(N);
+       document.getElementById('result').textContent=`The sum of first ${N} natural numbers is: ${sum}`;
+     }else{
+        document.getElementById('result').textContent="Please enter a valid positive integer.";
+      }
+   }
+ </script>
+</head>
+<body>
+   <h2> Sum of N Natural numbers</h2>
+   Enter a positive integer(N);
+   <input type="text" id="number">
+   <button onclick= "CalculateSum()"> Calculate</button>
+   <p id="result"></p>
+</body>
+</html>
