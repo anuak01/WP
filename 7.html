@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Employee Information Form </title>
+<script>
+	function calculatesalary(){
+			var basicsalary = parseFloat(document.getElementById('basic salary').value);
+                        var allowance = parseFloat(document.getElementById('allowance').value);
+			var taxrate = parseFloat(document.getElementById('taxrate').value);
+			var DA = basicsalary*0.25;
+			var HRA = basicsalary*0.15;
+			var PF = basicsalary*0.12;
+			var grosspay = basicsalary+DA+HRA+allowance;
+			var tax =(grosspay-PF)*(taxrate/100);
+			var deduction = PF+tax;
+			var netpay = grosspay-deduction;
+			document.getElementById('DA').value=DA.toFixed(2);
+			document.getElementById('HRA').value=HRA.toFixed(2);
+			document.getElementById('PF').value=PF.toFixed(2);
+			document.getElementById('grosspay').value=grosspay.toFixed(2);
+			document.getElementById('deduction').value=deduction.toFixed(2);
+			document.getElementById('netpay').value=netpay.toFixed(2);
+			}
+</script>
+</head>
+</body>
+ 	<h2>Employee Information</h2>
+	<form>
+	basicsalary:<input type="number" id="basicsalary"><br><br>
+	allowance:<input type="number"id="allowance"><br><br>
+	taxrate(%):<input type="number" id="taxrate"><br><br>
+        <input type="button" value="calculate" onclick="calculatesalary()">
+        </form>
+        <br>
+        <h2>salary details</h2>
+        DA:<input type="text" id="DA" readonly><br><br>
+        HRA:<input type="text" id="HRA" readonly><br><br>
+        PF:<input type="text" id="grosspay" readonly><br><br>
+        deduction:<input type="text" id="deduction" readonly><br><br>
+        netpay:<input type="text" id="netpay" readonly><br><br>
+</body>
+</html>
