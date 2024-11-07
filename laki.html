@@ -1,0 +1,44 @@
+
+<html>
+<head>
+
+<title>Change Background Color by Day of the Week</title>
+<style>
+body {
+text-align: center;
+font-size: 24px;
+padding: 50px;
+}
+</style>
+</head>
+<body>
+<?php
+// Array to store background colors for each day of the week
+$backgroundColors = array(
+"Sunday" => "#ff6666",
+"Monday" => "#ffcc99",
+"Tuesday" => "#99ff99",
+"Wednesday" => "#66b3ff",
+"Thursday" => "#ff99cc",
+"Friday" => "#ffff99",
+"Saturday" => "#cc99ff"
+);
+
+// Get the current day of the week
+$currentDay = date("l");
+
+// Set the background color based on the current day
+if (array_key_exists($currentDay, $backgroundColors)) {
+$backgroundColor = $backgroundColors[$currentDay];
+} else {
+$backgroundColor = "#f2f2f2"; // Default background color
+}
+?>
+
+<h1>Background Color of the Day</h1>
+
+<div style="background-color: <?php echo $backgroundColor; ?>">
+Today is <?php echo $currentDay; ?>
+</div>
+</body>
+</html>
