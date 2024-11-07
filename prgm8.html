@@ -42,3 +42,53 @@ Today is <?php echo $currentDay; ?>
 </div>
 </body>
 </html>
+
+
+
+<?php
+
+function is Prime($number) {
+
+if ($number <= 1) {
+
+return false;
+
+}
+
+if ($number <= 3) {
+
+return true;
+
+}
+
+if ($number 0/0 * 2 = 0 $number % 3=0) {
+
+return false;
+
+}
+
+for (\$ i = 5 Si^ * Si <= $number; \$ i +=6) {
+
+if ($number % \$ i = 0 $number % (Si + 2) = 0 ) {
+
+return false;
+
+}
+
+}
+
+return true;
+
+}
+
+echo "Prime Numbers: ";
+
+for ( Si = 2 ; \$ i <= 50 ; $i++) {
+
+if (isPrime($i)) {
+
+echo $i."";
+
+}
+
+}
