@@ -1,0 +1,229 @@
+DA LAB PROGRAM PART A
+
+LAB PROGRAM 1
+
+CONDITIONAL FORMATTING RULE:
+CONDITIONAL FORMATTING IS USED TO CHANGE THE APPERANCE OF THE CELLS IN THE RANGE BASED ON THE SPECIFIED CONDITIONS.
+==>home tab---confitional formatting---highlight cell rules--greater than---option dialog box---enter value---click ok(salary >50000).
+
+IF 
+IF is a premade function in excel. it returns value based on true or false condition. it has 3 parts:
+=IF(logical_test,(value_true),(value_false))
+use the if function to categorize employees into "HIGH PERFORMERS" and "AVERAGE PERFORMERS" BASED ON THEIR SALARIES
+=IF(E2>50000,"HIGH PERFORMERS","AVERAGE PERFORMERS")
+
+
+countif, sumif,average
+-countif is a premade function in excel which is used to count the cells based on specified condition. it is typed as =countif(range,criteria)
+-sumif is a prmade function in excel that returns the sum of values in a range based on condition. it is typed as =sumif
+-given as:-
+      =SUMIF(range,criteria,(sum_range)
+-average is a premade function in excel that gives the average value. it is typed as =AVERAGE
+   it adds the range and divides it by the number of observations.
+
+Enter all the department names in a separate column called Details. Sales, Marketing, Finance, HR.
+To count the number of employees working in each department.
+1.To calculate the total number of employees in each department.
+=COUNTIF (D2:D22,F2:F8)
+2.To calculate the sum of Salaries in Department wise
+=SUMIF (D2:D22,F2:F8,E2:E22)
+3.To calculate the average Salary in all department.
+=AVERAGE (E2:E22)
+4.Calculate the average salaries in each department.
+=AVERAGEIF (D2:D22,F2:F8,E2:E22)
+
+CONCAT Function
+
+To concatenate is to link something together.
+CONCAT is a function in Excel and is shortform for concatenate.
+The CONCAT function is used to link multiple cells without adding any delimiters between thecombined cell values.
+It is typed =CONCAT(cell1, delimiter, cell2)
+5.Create a new column using CONCAT to combine the employee's name and SALARY
+=CONCATENATE (A2,"---",E2)
+
+
+PROGRAM 2
+
+INDEX, MATCH, UNIQUE, IFS, COUNTIFS, SUMIFS, AVERAGEIFS
+-Calculate Value at the intersection of the 2nd row and 2nd column in the range A3:D12 & Value at the intersection of the 3rd row and 4th column in the range A3:D12 &use Index and match function to retrieve the sales of the specific employee based upon their name.
+-Match function is used to find out Order value is present in the table or not
+-Using Ifs Statement to Categorize the Sales Performance
+-Use Unique function to create the List Unique regions
+-Use COUNTIFS, SUMIFS, AverageIFS, functions to calculate statistics based on multiple Criteria, such as region, orders (>=50), sales.
+
+INDEX:
+The INDEX function returns a value or the reference to a value from within a table or range. Syntax: INDEX (array, row_num, [column_num])
+The array form of the INDEX function has the following arguments:
+-Array Required. A range of cells or an array constant.
+-If array contains only one row or column, the corresponding row_num or column_num argument is optional.
+-If array has more than one row and more than one column, and only row_num or column_num is used, INDEX returns an array of the entire row or column in array.
+-row_num	Required, unless column_num is present. Selects the row in array from which to return a value. If row_num is omitted, column_num is required.
+-column_num	Optional. Selects the column in array from which to return a value. If column_num is omitted, row_num is required.
+1.Calculate Value at the intersection of the 2nd row and 2nd column in the range A3:D12 & Value at the intersection of the 3rd row and 4th column in the range A3:D12 &use Index and match function to retrieve the sales of the specific employee based upon their name.
+  =INDEX(A3:D12;2;2)
+	=INDEX(A3:D12;3;4)
+	=INDEX(D3:D12;MATCH("Lana";A3:A12;0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Part- C: Power BI
+I
+-Introduction to Power BI
+- Get Started with Power BI 
+- Sign up for Power BI 
+- Overview: Power BI data sources 
+- Connect to a SaaS solution 
+- Upload a local CSV file 
+- Connect to Excel data that can be refreshed 
+- Create a Report with Visualizations
+
+1.Introduction to Power BI
+Power BI is a powerful business analytics tool developed by Microsoft that enables users to visualize and analyze data effectively, helping organizations make data-driven decisions.
+Power BI Desktop:
+This is a free application for Windows that allows users to create reports and data visualizations. 
+It includes tools for data modelling, transforming data using Power Query, creating relationships, and designing interactive reports and dashboards.
+
+2.Get Started with Power BI
+Go to the official Power BI Desktop download page (https://powerbi.microsoft.com/en-
+us/desktop/).
+-Download Power BI by clicking on the button indicating "Download free".
+-Once the download is complete, follow the on-screen instructions provided by the installation wizard to install Power BI Desktop on your computer.
+-After successful installation, you can launch Power BI Desktop.
+
+3.Sign up for Power BI:
+-Go to the Power BI website (powerbi.microsoft.com).
+-Sign up for a Power BI account using your work or personal email.
+
+
+4.Overview : Power BI Data Sources:
+Power BI supports various data sources, including but not limited to:
+-SaaS Solutions: Connect to cloud-based services like Microsoft Dynamics 365, Google Analytics, Salesforce, etc.
+-Local Files: Upload files from your computer, such as CSV, Excel, JSON, etc.
+-Databases: Connect to databases like SQL Server, MySQL, PostgreSQL, etc.
+-Web Sources: Extract data from web pages or APIs.
+-Azure Services: Utilize Azure data services like Azure SQL Database, Azure Blob Storage, etc.
+
+5.Connect to a SaaS Solution:
+-Open Power BI Desktop or sign in to the Power BI service online.
+-Click on "Get Data" from the Home tab.
+-Choose the type of SaaS solution you want to connect to (e.g., Salesforce, Google Analytics).
+-Follow the prompts to sign in and connect to your SaaS solution. You'll likely need to provide credentials or permissions to access the data.
+
+6.Upload a local CSV file:
+-Click on "Get Data" from the Home tab.
+-Select "Text/CSV" from the available data sources.
+-Browse to locate and select the CSV file from your computer.
+-Power BI will import the data from the CSV file.
+
+7.Connect to Excel dthat can be refreshed:
+-Click on "Get Data" from the Home tab.
+-Choose "Excel" as the data source.
+-Browse to select the Excel file or specify the file path.
+-Power BI will import data from the Excel file.
+-To refresh the data, go to "Home" > "Queries" > "Refresh."
+
+8.Create a Report with Visualizations:
+-Select the appropriate type of visualization (e.g., bar chart, line chart, pie chart) from the Visualizations pane on the right-hand side.
+-Drag and drop fields from your datasets onto the report canvas to create visualizations such as charts, graphs, tables, etc.
+-Customize the visualizations by formatting, sorting, and adding additional elements like slicers, text boxes, etc.
+-Repeat the process to create multiple visualizations for various insights.
+-Save your report.
+
+
+
+II.Using visualizations - Create a new report
+- Create and arrange visualizations
+- Format a visualization 
+- Use text, map, and gauge visualizations and save a report 
+- Use a slicer to filter visualizations 
+- Sort, copy, and paste visualizations
+1.Create a New Report:
+Open Microsoft Power BI Desktop.
+Click on "File" > "New"
+Import your data into Power BI by connecting to a data source.
+
+
+2.Create and Arrange Visualizations:
+Select the appropriate type of visualization (e.g., bar chart, line chart, pie chart) from the Visualizations pane on the right-hand side.
+Drag and drop fields from your dataset onto the visual to create different visualizations like bar charts, line graphs, etc.
+Arrange the visualizations by clicking and dragging them to desired locations on the canvas.
+
+3.Format a Visualization:
+Click on a visualization to select it.
+Use the "Format" or "Visualizations" pane to modify the appearance, colors, labels, and other settings of the selected visualization.
+
+
+4.Use text, map, and gauge visualizations and save a report:
+Include a text visualization by selecting "Card" from the "Visualizations" pane and drag and drop fields from your dataset onto the visual
+	Add a map visualization using the map visual from the visualization pane and dragging a geographical field onto the visual.
+Include a gauge visualization by selecting "Gauge" from the "Visualizations" pane and configuring it with appropriate data.
+Click on "File" > "Save" to save the report in your desired location and format.
+
+6.Use a Slicer to Filter Visualizations:
+-Select “Slicer (new)” from the Visualization pane and drag a field you want to use as a filter into the slicer visual.
+-Use the slicer to interactively filter the other visualizations on the report by selecting specific values.
+
+7.Sort, Copy, and Paste Visualizations:
+-To sort visualizations, select a visualization and use the sort options available in the "Format" or "Visualizations" pane.
+-To copy and paste visualizations, select the visualization, right-click, and choose "Copy." Then, right-click on the canvas and select "Paste."
+
+
+
+
+III.Modify and Print a Report - Rename and delete report pages - Add a filter to a page or report Set visualization interactions - Send a report to PowerPoint
+1.Modify and Print a Report:
+To modify a report in Power BI, you can edit existing visuals, add new visuals, change formatting, and adjust data connections.
+Open your report in Power BI Desktop or Power BI Service.
+Make the necessary modifications to the visuals by editing their properties, formatting, or data.
+To print the report, click on "File" and then select "Print" to configure the printing settings and print the report.
+2.Rename and Delete Report Pages:
+In Power BI Desktop or Service, navigate to the report page.
+To rename a report page, right-click on the page name in the Pages pane, select "Rename," and enter the new name.
+To delete a report page, right-click on the page name in the Pages pane and select "Delete."
+
+
+3.Add a Filter to a Page or Report:
+In Power BI Desktop, select the page or visual you want to apply the filter to.
+Go to the "Filters" pane and click on "Add a filter."
+Choose the field you want to use as a filter and configure its settings (e.g., filter type, values).
+
+4.Set Visualization Interactions:
+Click on the visual you want to set interactions for.
+Go to the "Format" pane (or right-click and select "Format") and navigate to the "Edit interactions" option.
+
+Adjust the interactions between visuals by selecting the interaction type (e.g., highlighting, filtering) for each visual.
+5.Send a Report to PowerPoint:
+In Power BI Service, open the report you want to export.
+Click on "File" and select "Export" > "PowerPoint (.pptx)."
+Configure the export settings and click "Export" to generate the PowerPoint file with the report visuals.
