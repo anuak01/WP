@@ -1,78 +1,65 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>  
-  <title>college website</title>
-  <!-- CSS styles can be added here-->
-  <style>
-    body {
-       font-family: Arial,sans-serif;
-       margin:20px;
-    }
-    h1{
-       color:lightpink;
-    }
-    p{
-       color:#666;
-    }
- </style>
+<head>
+<title>College Name - Home</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+header {
+background-color: #007ACC;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+h1 {
+margin: 0;
+}
+nav {
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
+}
+.content {
+padding: 20px;
+}
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+</style>
 </head>
 <body>
- <header>
-  <h1> welcome to our college</h1>
- </header>
- 
-
+<header>
+<h1>SINDHI COLLEGE</h1>
+<p><b>Knowledge is Power<b></p>
+</header>
 <nav>
- <ul>
-  <li><a href="#">home</a></li>
-  <li><a href="#">about</a></li>
-  <li><a href="#">courses/a></li>
-  <li><a href="#">contact</a></li>
- </ul>
+<a href="#">Home</a>
+<a href="#">Programs</a>
+<a href="#">Admissions</a>
+<a href="#">About Us</a>
+<a href="#">Contact Us</a>
 </nav>
-
-<main> 
-  <section>
-    <h2> about our college</h2>
-    <p> this is a brief description of our college.</p>
-  </section>
-  <section>
-     <h2> available courses</h2>
-     <?php
-     $courses=['computer science','engineering','business','arts','science'];
-     echo"<ul>";
-     foreach($courses as $course)
-     {
-       echo "<li>$course</li>";
-      }
-     echo "</ul>";
-    ?>
-  </section>
-  <section>
-  <ha> contact information</h2>
-  <p>address:123 college avenue city,country</p>
-  <p>email:info@college.com</p>
-  </section>
-</main>
-
- <footer>
-   <p>&copy;
-     <?php
-     echo date("Y");
-     ?>
-     our college.all rights reserved.</p>
- </footer>
- <footer>
-  <p>&copy;
-    <?php
-    echo date("y");
-    ?>
-    our college.all rights reserved.</p>
-  </footer>
- </body>
-<html>
-
-    
-
-
+<div class="content">
+<h2>Welcome to SINDHI COLLEGE </h2>
+<p>
+Welcome to Sindhi College , where we are committed to providing a quality education and empowering the future.
+</p>
+</div>
+<footer>
+&copy; <?php echo date("Y"); ?> Sindhi College
+</footer>
+</body>
+</html>
+Output
   
