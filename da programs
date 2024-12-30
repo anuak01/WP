@@ -1,6 +1,15 @@
 DA LAB PROGRAM PART A
 
 LAB PROGRAM 1
+1. Apply conditional formatting to highlight employees with high salary greater than
+50,000
+2. Use the IF function to categorize employees into "High Performers" or
+"Average Performers" based on their sales.
+3. Use COUNTIF, SUMIF, and AVERAGE to calculate statistics like no of
+employees working in each department and sum of their salaries and average of
+their Salaries, average Salary of total employees.
+4. Create a new column using CONCAT to combine the employee's name
+and department.
 
 CONDITIONAL FORMATTING RULE:
 CONDITIONAL FORMATTING IS USED TO CHANGE THE APPERANCE OF THE CELLS IN THE RANGE BASED ON THE SPECIFIED CONDITIONS.
@@ -17,7 +26,7 @@ countif, sumif,average
 -countif is a premade function in excel which is used to count the cells based on specified condition. it is typed as =countif(range,criteria)
 -sumif is a prmade function in excel that returns the sum of values in a range based on condition. it is typed as =sumif
 -given as:-
-      =SUMIF(range,criteria,(sum_range)
+      =SUMIF(range,criteria,(sum_range))
 -average is a premade function in excel that gives the average value. it is typed as =AVERAGE
    it adds the range and divides it by the number of observations.
 
@@ -45,7 +54,9 @@ It is typed =CONCAT(cell1, delimiter, cell2)
 PROGRAM 2
 
 INDEX, MATCH, UNIQUE, IFS, COUNTIFS, SUMIFS, AVERAGEIFS
--Calculate Value at the intersection of the 2nd row and 2nd column in the range A3:D12 & Value at the intersection of the 3rd row and 4th column in the range A3:D12 &use Index and match function to retrieve the sales of the specific employee based upon their name.
+-Calculate Value at the intersection of the 2nd row and 2nd column in the range A3:D12 
+& Value at the intersection of the 3rd row and 4th column in the range A3:D12 
+&use Index and match function to retrieve the sales of the specific employee based upon their name.
 -Match function is used to find out Order value is present in the table or not
 -Using Ifs Statement to Categorize the Sales Performance
 -Use Unique function to create the List Unique regions
